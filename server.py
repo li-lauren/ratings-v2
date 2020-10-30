@@ -66,7 +66,7 @@ def login():
 
     if user:
         if user.password == pw:
-            session['user'] = user.id
+            session['user'] = user.user_id
             flash('Logged in!')
             print(session)
         else:
