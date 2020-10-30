@@ -56,7 +56,7 @@ def register_user():
 
     return redirect('/')
 
-@app.route('/login', method=['POST'])
+@app.route('/login', methods=['POST'])
 def login():
 
     email = request.form.get('email')
